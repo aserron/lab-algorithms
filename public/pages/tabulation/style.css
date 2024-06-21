@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header, .page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    margin: 0;
+}
+
+.page-header #description {
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.page-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+footer a img {
+    margin-right: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.index {
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+}
+
+.header {
+    background-color: transparent;
+    font-weight: normal; /* Ensure row headers are not bold */
+    border: none; /* Remove border from row headers */
+}
+
+.completed {
+    background-color: lightgreen;
+}
+
+.initial {
+    background-color: green;
+    color: white;
+}
+
+.current {
+    background-color: yellow;
+    border: 2px solid red;
+}
+
+.current-index {
+    background-color: orange;
+    border: 2px solid red;
+    font-weight: bold; /* Make current index bold */
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+#description {
+    max-width: 800px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2em;
+}
+
+#stepInfo {
+    margin-top: 20px;
+    max-width: 800px;
+    text-align: left;
+    color: gray;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+#tabulation-array h2, #stepInfoContainer h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
